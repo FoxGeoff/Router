@@ -6,11 +6,6 @@ import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-const routes: Routes = [
-  { path: 'crisis-center', component: CrisisListComponent },
-  { path: '', redirectTo: '/crisis-center', pathMatch: 'full'},
-  { path: '**', component: PageNotFoundComponent }
-];
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,9 +14,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    //AppRoutingModule
-    RouterModule.forRoot(routes 
-     , { enableTracing: true }) // <-- debugging purposes only
+    AppRoutingModule,
+    //RouterModule.forRoot(routes 
+    // , { enableTracing: true }) // <-- debugging purposes only
   ],
   providers: [],
   bootstrap: [AppComponent]
