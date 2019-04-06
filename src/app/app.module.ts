@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HeroesComponent } from './heroes/heroes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CrisisListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HeroesComponent
   ],
   imports: [
     BrowserModule,
