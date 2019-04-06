@@ -6,6 +6,7 @@ import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroesModule } from './heroes/heroes.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,10 @@ import { HeroesComponent } from './heroes/heroes.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    HeroesModule,
+    //Most importantly, AppRoutingModule comes after the HeroesModule
+    AppRoutingModule, 
+    
     //RouterModule.forRoot(routes 
     // , { enableTracing: true }) // <-- debugging purposes only
   ],

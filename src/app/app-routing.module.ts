@@ -5,7 +5,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HeroesComponent } from './heroes/heroes.component';
 
 const routes: Routes = [
-  { path: 'heroes', component: HeroesComponent },
+  //{ path: 'heroes', component: HeroesComponent },
   { path: 'crisis-center', component: CrisisListComponent },
   { path: '', redirectTo: '/crisis-center', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
@@ -13,7 +13,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { enableTracing: true } // <-- debugging purposes only
+    RouterModule.forRoot(routes, //NOTE: forRoot()
+      { enableTracing: true } // <-- debugging purposes only
   )],
   exports: [RouterModule]
 })
