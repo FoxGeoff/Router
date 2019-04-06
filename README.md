@@ -132,4 +132,5 @@ mock-heroes.ts
 
 * creating root routing module                ```ng generate module app-routing --module app --flat``
 * Creating feature moduel with routing module ```ng generate module heroes/heroes --module app --flat --routing```
+* Create a component with app-routing.module.ts ```ng g c CrisisList --nospec --module app-routing --dry-run```
 
